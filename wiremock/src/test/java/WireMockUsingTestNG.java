@@ -47,7 +47,7 @@ public class WireMockUsingTestNG {
         String contentType = "application/json";
         String uri = "/v1/wireMockHome";
         String statusMessage = "Welcome to wire mock tutorial";
-        File file = new File("/Users/venkatesh.u/TpsMock/wiremock/src/main/resources/jsonForWireMock");
+        File file = new File("/wiremock/src/main/resources/jsonForWireMock");
         String resp = FileUtils.readFileToString(file);
         resp = resp.replace("${statusMessage}", statusMessage ).replace("${statusCode}", statusCode);
 
